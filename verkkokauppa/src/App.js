@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App () {
   return (
-    <body className='App'>
+    <div className='App'>
       <header>
         <nav className='navbar navbar-expand-lg navbar-light bg-light navbar-nav mr-auto'>
           <div className='container-fluid'>
@@ -230,10 +230,19 @@ function App () {
               </div>
             </div>
           </div>
-          <div className='col'>content area</div>
+          <div className='col'>
+                <div className="card">
+                    <img src={require('pictures/red_bull.jpg')} className="card-img-top" alt="..."/>
+                    <div className="card-body">
+                        <h5 className="card-title">Card title</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
-    </body>
+    </div>
   )
 }
 

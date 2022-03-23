@@ -34,34 +34,6 @@ function App() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href='#submenu1'
-                                        data-bs-toggle='collapse'
-                                        className='nav-link px-0 align-middle'
-                                    >
-                                        <i className='fs-4 bi-speedometer2'></i>{' '}
-                                        <span className='ms-1 d-none d-sm-inline'>Dashboard</span>{' '}
-                                    </a>
-                                    <ul
-                                        className='collapse show nav flex-column ms-1'
-                                        id='submenu1'
-                                        data-bs-parent='#menu'
-                                    >
-                                        <li className='w-100'>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Item</span> 1{' '}
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Item</span> 2{' '}
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
                                     <a href='#' className='nav-link px-0 align-middle'>
                                         <i className='fs-4 bi-table'></i>{' '}
                                         <span className='ms-1 d-none d-sm-inline'>Orders</span>
@@ -144,22 +116,6 @@ function App() {
                             </ul>
                             <hr />
                             <div className='dropdown pb-4'>
-                                <a
-                                    href='#'
-                                    className='d-flex align-items-center text-white text-decoration-none dropdown-toggle'
-                                    id='dropdownUser1'
-                                    data-bs-toggle='dropdown'
-                                    aria-expanded='false'
-                                >
-                                    <img
-                                        src='https://github.com/mdo.png'
-                                        alt='hugenerd'
-                                        width='30'
-                                        height='30'
-                                        className='rounded-circle'
-                                    />
-                                    <span className='d-none d-sm-inline mx-1'>loser</span>
-                                </a>
                                 <ul className='dropdown-menu dropdown-menu-dark text-small shadow'>
                                     <li>
                                         <a className='dropdown-item' href='#'>
@@ -192,7 +148,7 @@ function App() {
                         <div className="card">
                             <img src={require('pictures/red_bull.jpg')} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
+                                <h5 className="card-title">Red Bull</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" className="btn btn-primary">Go somewhere</a>
                             </div>

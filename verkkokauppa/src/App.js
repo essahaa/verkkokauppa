@@ -1,6 +1,6 @@
 import logo from './logo.svg'
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 
 
 function App() {
@@ -17,18 +17,12 @@ function App() {
                 </div>
             </header>
 
-            <div className='container-fluid'>
+            <div className='test container-fluid'>
                 <div className='row flex-nowrap'>
-                    <div className='col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark'>
+                    <div className='test1 col-auto col-md-3 col-xl-2 px-sm-2 px-0'>
                         <div className='d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100'>
-                            <a
-                                href='/'
-                                className='d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none'
-                            >
-                                <span className='fs-5 d-none d-sm-inline'>Menu</span>
-                            </a>
                             <ul
-                                className='nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start'
+                                className='test2 nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start'
                                 id='menu'
                             >
                                 <li className='nav-item'>
@@ -150,7 +144,7 @@ function App() {
                     </div>
                     <div className='col'>
                         <div className="card">
-                            <img className="card-img-top" alt="..." />
+                            <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Red Bull</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

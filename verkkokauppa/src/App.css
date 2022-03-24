@@ -79,18 +79,46 @@ header {
   
 }
 
-.col-6 {
-  width: 100%;
-  
-}
 
-.row {
-  padding-top: 1em;
-  padding-bottom: 1em;
+.muutu {
+
   overflow: hidden;
 }
 
 .shop {
   width: 25%;
   float: right;
+}
+
+.test {
+  padding-left: 0;
+  
+}
+
+.test1 {
+  background-color: #0F0C24;
+}
+
+.test2 {
+  width: 100%;
+  align-items: center;
+}
+
+.nav-link {
+  color: #C1436D; 
+  font-size: xx-large;
+  justify-content: center;
+  
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:focus {
+  color: white;
+}
+
+li {
+  margin-bottom: 2em;
 }

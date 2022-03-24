@@ -2,15 +2,17 @@ import logo from './logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
 function App() {
     return (
-        <div className='App'>
-            <header>
-                <nav className='navbar navbar-expand-lg navbar-light bg-light navbar-nav mr-auto'>
-                    <div className='container-fluid'>
-                        <h1>JONNEN VALINTA</h1>
-                    </div>
-                </nav>
+        <div className='App container-fluid'>
+            <header className="muutu row">
+                <div className='col-6'>
+                    <h1 className='glow'>JONNEN VALINTA</h1>
+                </div> 
+                <div className='shopcart col-6'>
+                    
+                </div>
             </header>
 
             <div className='container-fluid'>

@@ -11,7 +11,9 @@ function App() {
                     <h1 className='glow'>JONNEN VALINTA</h1>
                 </div> 
                 <div className='shopcart col-6'>
-                    
+                    <a href='/'>
+                        <img className='shop' src={require('./images/cart.png')} />
+                    </a>
                 </div>
             </header>
 

@@ -5,187 +5,52 @@ import './App.css'
 
 function App() {
     return (
-        <div className='App container-fluid'>
-            <header className="muutu row">
-                <div className='col-6'>
-                    <h1 className='glow'>JONNEN VALINTA</h1>
-                </div> 
-                <div className='shopcart col-6'>
-                    <a href='/'>
-                        <img className='shop' src={require('./images/cart.png')} />
-                    </a>
-                </div>
-            </header>
+        <div className='App'>
+           <header>
+               <div className="row">
+                   <div className="col-9">
+                        <h1>Jonnen valinta</h1>
+                    </div>
+                    <div className="col-3">
+                        <p>ostoskori</p>
+                    </div>
+               </div>
+           </header>
 
-            <div className='test container-fluid'>
-                <div className='row row-cols-12 flex-nowrap'>
-                    <div className='test1 col-3'>
-                        <div className='d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100'>
-                            <ul
-                                className='test2 nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start'
-                                id='menu'
-                            >
-                                <li className='nav-item'>
-                                    <a href='#' className='nav-link align-middle px-0'>
-                                        <i className='fs-4 bi-house'></i>{' '}
-                                        <span className='ms-1 d-none d-sm-inline'>Home</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#' className='nav-link px-0 align-middle'>
-                                        <i className='fs-4 bi-table'></i>{' '}
-                                        <span className='ms-1 d-none d-sm-inline'>Orders</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href='#submenu2'
-                                        data-bs-toggle='collapse'
-                                        className='nav-link px-0 align-middle '
-                                    >
-                                        <i className='fs-4 bi-bootstrap'></i>{' '}
-                                        <span className='ms-1 d-none d-sm-inline'>Bootstrap</span>
-                                    </a>
-                                    <ul
-                                        className='collapse nav flex-column ms-1'
-                                        id='submenu2'
-                                        data-bs-parent='#menu'
-                                    >
-                                        <li className='w-100'>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Item</span> 1
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Item</span> 2
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a
-                                        href='#submenu3'
-                                        data-bs-toggle='collapse'
-                                        className='nav-link px-0 align-middle'
-                                    >
-                                        <i className='fs-4 bi-grid'></i>{' '}
-                                        <span className='ms-1 d-none d-sm-inline'>Products</span>{' '}
-                                    </a>
-                                    <ul
-                                        className='collapse nav flex-column ms-1'
-                                        id='submenu3'
-                                        data-bs-parent='#menu'
-                                    >
-                                        <li className='w-100'>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Product</span> 1
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Product</span> 2
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Product</span> 3
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='#' className='nav-link px-0'>
-                                                {' '}
-                                                <span className='d-none d-sm-inline'>Product</span> 4
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href='#' className='nav-link px-0 align-middle'>
-                                        <i className='fs-4 bi-people'></i>{' '}
-                                        <span className='ms-1 d-none d-sm-inline'>Customers</span>{' '}
-                                    </a>
-                                </li>
-                            </ul>
-                            <hr />
-                            <div className='dropdown pb-4'>
-                                <ul className='dropdown-menu dropdown-menu-dark text-small shadow'>
-                                    <li>
-                                        <a className='dropdown-item' href='#'>
-                                            New project...
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className='dropdown-item' href='#'>
-                                            Settings
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className='dropdown-item' href='#'>
-                                            Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr className='dropdown-divider' />
-                                    </li>
-                                    <li>
-                                        <a className='dropdown-item' href='#'>
-                                            Sign out
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <body>
+                <div className="row">
+                    <div className="nav col-2">
+                        <ul className="list">
+                            <li className="listItem">Etusivu</li>
+                            <li className="listItem">Sokerittomat</li>
+                            <li className="listItem">Sokerittomat</li>
+                            <li className="listItem">Sokerittomat</li>
+                            <li className="listItem">Sokerittomat</li>
+                            <li className="listItem">Sokerittomat</li>
+                            
+                        </ul>
                     </div>
-                    <div className='row'>
-                        <div className='col-3 cards2'>
-                            <div className="card">
-                                <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">Red Bull</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>  
+
+                    <div className=" col-10 row">
+                        <div className="col-3">
                         </div>
-                        <div className='col-3 cards2'>
-                            <div className="card">
-                                <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">Red Bull</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>     
+                        <div className="col-3">
                         </div>
-                        <div className='col-3 cards2'>
-                            <div className="card">
-                                <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">Red Bull</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div> 
-                        </div>   
-                        <div className='col-3 cards2'>
-                            <div className="card">
-                                <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">Red Bull</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div> 
-                        </div> 
-                    </div>
+                        <div className="col-3">
+                        </div>
+                        <div className="col-3">
+                        </div>
+                        <div className="col-3">
+                        </div>
+                        <div className="col-3">
+                        </div>
+                        <div className="col-3">
+                        </div>
+                        <div className="col-3">
+                        </div>
+                    </div> 
                 </div>
-            </div>
+            </body>
         </div>
     )
 }

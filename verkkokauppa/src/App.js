@@ -33,14 +33,35 @@ function App() {
 
                     <div className=" col-10 row">
                         <div className="col-3">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div class="card">
+                                    <img src="..." class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
                         </div>
                         <div className="col-3">
                         </div>
                         <div className="col-3">
                         </div>
                         <div className="col-3">
-                        </div>
-                        <div className="col-3">
+                        <div class="card">
+                                    <img src="..." class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
                         </div>
                         <div className="col-3">
                         </div>

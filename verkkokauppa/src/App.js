@@ -21,12 +21,21 @@ function App() {
                 <div className="row">
                     <div className="nav col-3 col-xs-3 col-sm-3 col-md-2 col-lg-2">
                         <ul className="list">
-                            <li className="listItem">Etusivu</li>
-                            <li className="listItem">Sokerittomat</li>
-                            <li className="listItem">Sokerittomat</li>
-                            <li className="listItem">Sokerittomat</li>
-                            <li className="listItem">Sokerittomat</li>
-                            <li className="listItem">Sokerittomat</li>
+                            <li className="listItem">
+                                <a href="#" className="navlink">Etusivu</a>
+                            </li>
+                            <li className="listItem">
+                                <a href="#" className="navlink">Etusivu</a>
+                            </li>
+                            <li className="listItem">
+                                <a href="#" className="navlink">Etusivu</a>
+                            </li>
+                            <li className="listItem">
+                                <a href="#" className="navlink">Etusivu</a>
+                            </li>
+                            <li className="listItem">
+                                <a href="#" className="navlink">Etusivu</a>
+                            </li>
                             
                         </ul>
                     </div>

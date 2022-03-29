@@ -66,19 +66,32 @@ body {
   padding: 0;
 }
 
+.navlink {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  border-radius: 2px;
+}
+
+.navlink:hover {
+  color: white;
+  background-color: red;
+}
+
 .list {
   background-color: #1F194A;
   color: white;
   height: 100%;
   width: 100%;
   list-style-type: none;
-  padding-left: 1em;
-  text-align: left;
+  text-align: center;
+  padding-left: 0;
 }
 
 .listItem {
   padding-top: 1em;
   padding-bottom: 1em;
+  width: 100%;
 }
 
 .card {

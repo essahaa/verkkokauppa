@@ -41,7 +41,7 @@ function App() {
                     </div>
 
                     <div className="col-9 col-xs-9 col-sm-9 col-md-10 col-lg-10 row">
-                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="kortti col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                             <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
                                 <div class="card-body">
@@ -50,7 +50,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="kortti col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                             <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
                                 <div class="card-body">
@@ -59,7 +59,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="kortti col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                             <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
                                 <div class="card-body">
@@ -68,7 +68,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="kortti col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                             <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
                                 <div class="card-body">

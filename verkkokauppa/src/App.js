@@ -9,7 +9,7 @@ function App() {
            <header>
                <div className="row head">
                    <div className="col-8 col-xs-8 col-sm-9 col-md-9 col-lg-10 logo">
-                        <h1>Jonnen valinta</h1>
+                        <h1>Aapon valinta</h1>
                     </div>
                     <div className="col-4 col-xs-4 col-sm-3 col-md-3 col-lg-2 shopcarter">
                     <img src={require('./images/cart.png')} className="shopcart" alt="..." />

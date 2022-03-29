@@ -19,7 +19,7 @@ function App() {
 
             <body>
                 <div className="row">
-                    <div className="nav col-2">
+                    <div className="nav col-3 col-xs-3 col-sm-3 col-md-2 col-lg-2">
                         <ul className="list">
                             <li className="listItem">Etusivu</li>
                             <li className="listItem">Sokerittomat</li>
@@ -31,7 +31,7 @@ function App() {
                         </ul>
                     </div>
 
-                    <div className=" col-10 row">
+                    <div className="col-9 col-xs-9 col-sm-9 col-md-10 col-lg-10 row">
                         <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                             <img src={require('./images/battery.png')} className="card-img-top" alt="..." />

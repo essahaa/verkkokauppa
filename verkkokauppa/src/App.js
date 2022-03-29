@@ -7,12 +7,12 @@ function App() {
     return (
         <div className='App'>
            <header>
-               <div className="row">
-                   <div className="col-9">
+               <div className="row head">
+                   <div className="col-9 logo">
                         <h1>Jonnen valinta</h1>
                     </div>
-                    <div className="col-3">
-                        <p>ostoskori</p>
+                    <div className="col-3 shopcarter">
+                    <img src={require('./images/cart.png')} className="shopcart" alt="..." />
                     </div>
                </div>
            </header>
@@ -32,42 +32,41 @@ function App() {
                     </div>
 
                     <div className=" col-10 row">
-                        <div className="col-4">
+                        <div className="col-sm-5 col-md-4 col-lg-3">
                             <div class="card">
-                                <img src="..." class="card-img-top" alt="..." />
+                            <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-sm-5 col-md-4 col-lg-3">
                             <div class="card">
                             <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
+                            </div>
                         </div>
-                        <div className="col-4">
-                        </div>
-                        <div className="col-3">
-                        </div>
-                        <div className="col-3">
-                        <div class="card">
-                        <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
+                        <div className="col-sm-5 col-md-4 col-lg-3">
+                            <div class="card">
+                            <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
+                            </div>
                         </div>
-                        <div className="col-3">
-                        </div>
-                        <div className="col-3">
-                        </div>
-                        <div className="col-3">
+                        <div className="col-sm-5 col-md-4 col-lg-3">
+                            <div class="card">
+                            <img src={require('./images/battery.png')} className="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
                     </div> 
                 </div>

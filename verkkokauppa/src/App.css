@@ -39,9 +39,18 @@
 /* #0F0C24 #A350A3 #C1436D */
 header {
   background-color: #0F0C24;
-  color: white;
-  padding: 1em; 
+  color: white; 
   text-align: left;
+  height: 100%;
+}
+
+.shopcart {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  margin: auto;
 }
 
 body {
@@ -79,3 +88,4 @@ body {
 img {
   scale: 50%;
 }
+

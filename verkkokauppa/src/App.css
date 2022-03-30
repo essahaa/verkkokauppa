@@ -37,9 +37,14 @@
   }
 }
 /* #0F0C24 #A350A3 #C1436D */
+/*#1A1A1D #4E4E50 #6F2232 #C3073F*/
+body {
+  background-color: #1A1A1D;
+}
+
 header {
-  background-color: #0F0C24;
-  color: white; 
+  background-color: #1A1A1D;
+  color: #6F2232; 
   text-align: left;
   height: 100%;
 }
@@ -76,11 +81,11 @@ body {
 
 .navlink:hover {
   color: white;
-  background-color: red;
+  background-color: #6F2232;
 }
 
 .list {
-  background-color: #1F194A;
+  background-color: #4E4E50;
   color: white;
   height: 100%;
   width: 100%;
@@ -97,6 +102,12 @@ body {
 
 .card {
   height: 100%;
+  background-color: #6F2232;
+  color: #C3073F;
+}
+
+.card-body {
+  background-color: #1A1A1D;
 }
 
 img {

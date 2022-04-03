@@ -1,119 +1,89 @@
+@import '~bootstrap/scss/bootstrap';
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #282c34;
+	color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+	/* 	outline-style: solid;
+	outline-color: #c3073f; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #C1436D;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
 }
 /* #0F0C24 #A350A3 #C1436D */
 /*#1A1A1D #4E4E50 #6F2232 #C3073F*/
-.bod {
-  background-color: #1A1A1D;
-}
-
-header {
-  background-color: #1A1A1D;
-  color: #6F2232; 
-  text-align: left;
-  height: 100%;
-}
-
-.shopcart {
-  width: 100%;
-  height: auto;
-}
-
-.logo {
-  margin: auto;
-}
-
 body {
-  height: 100%;
-}
+	background-color: #1b1b1b;
+	color: #af223f;
 
+	height: 100%;
+}
 .row {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
+	height: 10%;
 }
 
 .nav {
-  padding: 0;
+	padding: 5px;
+	display: flex;
 }
 
 .navlink {
-  text-decoration: none;
-  color: white;
-  padding: 0.5em 1.5em 0.5em 1.5em;
-  width: 100%;
-  border-radius: 2px;
+	text-decoration: none;
+	color: white;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+	width: 100%;
+	border-radius: 2px;
+	outline-style: auto;
+	background-color: #4e4e50;
 }
 
 .navlink:hover {
-  color: white;
-  background-color: #6F2232;
+	color: white;
+	background-color: #6f2232;
 }
 
 .list {
-  background-color: #4E4E50;
-  color: white;
-  height: 100%;
-  width: 100%;
-  list-style-type: none;
-  text-align: center;
-  padding-left: 0;
+	color: white;
+
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0;
+	outline-style: solid 1px white;
 }
 
 .listItem {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 100%;
 }
 
 .card {
-  height: 100%;
-  background-color: #6F2232;
-  color: #C3073F;
+	height: 100%;
+	background-color: #282c34;
+	color: white;
+	outline: auto;
+	outline-color: #4e4e50;
+	margin-top: 10px;
 }
 
 .card-body {
-  background-color: #1A1A1D;
-}
-
-img {
-  scale: 50%;
+	display: flex;
+	background-color: #282c34;
+	align-items: center;
+	flex-direction: column;
 }
 
 .kortti {
-  padding: 0;
+	padding: 5px;
 }

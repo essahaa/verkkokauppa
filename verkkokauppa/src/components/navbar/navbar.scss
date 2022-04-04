@@ -1,4 +1,5 @@
 div {
+<<<<<<< Updated upstream
 	display: flex;
 	padding: 5px;
 }
@@ -14,6 +15,7 @@ div {
 	list-style-type: none;
 	text-align: center;
 	padding-left: 0;
+=======
 	padding: 5px;
 }
 .row {
@@ -29,6 +31,7 @@ div {
 	width: 100%;
 	list-style-type: none;
 	text-align: center;
+>>>>>>> Stashed changes
 	outline-style: solid 1px;
 }
 
@@ -43,13 +46,19 @@ div {
 .nav {
 	padding: 5px;
 	display: flex;
+<<<<<<< Updated upstream
+=======
 	height: 10%;
 	align-content: center;
+>>>>>>> Stashed changes
 }
 
 .navlink,
 .links {
+<<<<<<< Updated upstream
+=======
 	display: flex;
+>>>>>>> Stashed changes
 	text-decoration: none;
 	color: white;
 	padding: 0.5em 1.5em 0.5em 1.5em;

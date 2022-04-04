@@ -30,19 +30,19 @@ function Navbar() {
 						</Link>
 					</li>
 					<li className="listItem">
-						<a href="#" className="navlink">
+						{/* <a href="#" className="navlink">
 							Etusivu
-						</a>
+						</a> */}
 					</li>
 					<li className="listItem">
-						<a href="#" className="navlink">
+						{/* <a href="#" className="navlink">
 							Etusivu
-						</a>
+						</a> */}
 					</li>
 					<li className="listItem">
-						<a href="#" className="navlink">
+						{/* 	<a href="#" className="navlink">
 							Etusivu
-						</a>
+						</a> */}
 					</li>
 				</ul>
 			</div>

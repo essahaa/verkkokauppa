@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+//import React, { useState, useEffect } from 'react';
 
 export default function Products() {
-	const [products, setProducts] = useState([]);
+	//const [products, setProducts] = useState([]);
 	return <div>Products</div>;
 }

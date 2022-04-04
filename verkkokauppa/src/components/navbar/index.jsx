@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.scss';
-//import './App.scss';
 
 function Navbar() {
 	return (
@@ -12,7 +11,10 @@ function Navbar() {
 						{/* 	<a href="#" className="navlink">
 									Etusivu
 								</a> */}
-						<Link to="/verkkokauppa/src/pages/Home.js">
+						<Link
+							className="links"
+							to="/verkkokauppa/src/pages/Home.js"
+						>
 							Etusivu
 						</Link>
 					</li>
@@ -20,7 +22,10 @@ function Navbar() {
 						{/* 	<a href="#" className="navlink">
 									Etusivu
 								</a> */}
-						<Link to="/verkkokauppa/src/pages/Products.js">
+						<Link
+							className="links"
+							to="/verkkokauppa/src/pages/Products.js"
+						>
 							Tuotteet
 						</Link>
 					</li>

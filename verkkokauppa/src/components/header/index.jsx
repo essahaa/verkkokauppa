@@ -1,5 +1,9 @@
 import React from 'react';
 import './header.scss';
+<<<<<<< Updated upstream
+=======
+import { MDBInput } from 'mdb-react-ui-kit';
+>>>>>>> Stashed changes
 //import cart.png
 const Header = () => {
 	return (
@@ -15,6 +19,17 @@ const Header = () => {
 					/>
 				</a>
 			</div>
+<<<<<<< Updated upstream
+=======
+			{
+				<MDBInput
+					id="typeText"
+					type="text"
+					placeholder="Etsi tuotetta..."
+				/>
+			}
+
+>>>>>>> Stashed changes
 			<div className="headerkuvat">
 				<img
 					className="headerkuvas"

@@ -5,15 +5,26 @@
 	height: 100%;
 }
  */
+<<<<<<< Updated upstream
 #headerdiv {
 	width: 100%;
 	background-color: #282c34;
+=======
+#headerdiv,
+#textinput {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+>>>>>>> Stashed changes
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	font-size: calc(10px + 2vmin);
 	color: white;
+<<<<<<< Updated upstream
 	padding-left: 15px;
+=======
+>>>>>>> Stashed changes
 }
 #cartkuva {
 	display: flex;

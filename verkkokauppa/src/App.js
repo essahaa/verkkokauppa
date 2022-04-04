@@ -6,6 +6,9 @@ import Header from './components/header';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Body from './components/body';
+
+const URL = "http://localhost/verkkokauppaBackEndi/";
+
 function App() {
 	return (
 		<>

@@ -1,9 +1,5 @@
 import React from 'react';
 import './body.scss';
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 export default function body() {
 	return (
 		<div className="container">

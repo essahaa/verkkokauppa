@@ -11,4 +11,3 @@ function openDb(): object {
 /*Hullua paskaa*/
 
 }
-}

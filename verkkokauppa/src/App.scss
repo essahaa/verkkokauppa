@@ -1,11 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
-<<<<<<< Updated upstream
-=======
 body {
 	height: 100%;
 	width: 100%;
 }
->>>>>>> Stashed changes
 .App {
 	display: flex;
 	flex-direction: column;
@@ -18,16 +15,10 @@ body {
 }
 
 .container {
-<<<<<<< Updated upstream
-	height: 100%;
-	width: 100%;
-	overflow: auto;
-=======
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
 	margin: 0;
->>>>>>> Stashed changes
 }
 /* #0F0C24 #A350A3 #C1436D */
 /*#1A1A1D #4E4E50 #6F2232 #C3073F*/

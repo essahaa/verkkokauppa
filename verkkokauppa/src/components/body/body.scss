@@ -1,0 +1,30 @@
+.items-container {
+	display: flex;
+	background-color: #282c34;
+	color: #af223f;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	flex-wrap: wrap;
+	flex-basis: 90%;
+}
+
+.card {
+	height: 100%;
+	background-color: #282c34;
+	color: white;
+	outline: auto;
+	outline-color: #4e4e50;
+	margin-top: 10px;
+}
+
+.card-body {
+	display: flex;
+	background-color: #282c34;
+	align-items: center;
+	flex-direction: column;
+}
+
+.kortti {
+	padding: 5px;
+}

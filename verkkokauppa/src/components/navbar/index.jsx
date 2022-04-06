@@ -25,15 +25,26 @@ export default function Navbar({ url }) {
 				);
 			});
 	}, []);
+	//col-3 col-xs-3 col-sm-3 col-md-2 col-lg-1
 	return (
-		<div className="button-column">
-			{categories.map((category) => (
-				<Link className="links" to={'/products/' + category.id}>
-					<Button variant="outline-light" className="w-100">
-						{category.name}
-					</Button>
-				</Link>
-			))}
+		<div className="row">
+			<Button variant="outline-light" className="col-1,">
+				Dark
+			</Button>
+			<div className="nav w-25">
+				<ul className="list">
+					{categories.map((category) => (
+						<li className="listItem">
+							<Link
+								className="links"
+								to={'/products/' + category.id}
+							>
+								{category.name}
+							</Link>
+						</li>
+					))}
+				</ul>
+			</div>
 		</div>
 	);
 }

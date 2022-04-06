@@ -1,20 +1,7 @@
 import React from 'react';
-import Body from '../components/body';
-import Navbar from '../components/navbar';
-
-const URL = 'http://localhost/verkkokauppaBackEndi/';
+//import Header from '../components/header';
+//import App from '../App.js';
 
 export default function home() {
-	return (
-		<div
-			style={{
-				display: 'flex',
-				justifyContent: 'space-between',
-			}}
-		>
-			<Navbar url={URL} />
-
-			<Body></Body>
-		</div>
-	);
+	return <div></div>; //<App></App>;
 }

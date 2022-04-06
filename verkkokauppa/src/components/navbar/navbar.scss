@@ -1,9 +1,12 @@
-.button-column {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 10%;
-	gap: 0.5em;
-	padding: 0.5em;
+div {
+	padding: 5px;
+}
+.row {
+	max-height: 100px;
+	margin: 0;
+	width: 100%;
+	justify-content: center;
+	flex-direction: row;
 }
 .list {
 	display: flex;
@@ -14,17 +17,31 @@
 	outline-style: solid 1px;
 }
 
-.listItem {
+.listItem,
+.links {
 	color: white;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	width: 100%;
 	outline-style: solid 1px;
 }
+.nav {
+	padding: 5px;
+	display: flex;
+	height: 10%;
+	align-content: center;
+}
 
 .navlink,
 .links {
+	display: flex;
 	text-decoration: none;
+	color: white;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+	width: 100%;
+	border-radius: 2px;
+	outline-style: auto;
+	background-color: #3e3e3e;
 }
 
 .navlink:hover {

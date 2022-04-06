@@ -2,8 +2,24 @@ import React from 'react';
 import Products from '../../pages/Products';
 import './body.scss';
 export default function body() {
-
 	
+	const [categoryName, setCategoryName] = useState('');
+	const [products, setProducts] = useState([]);
+
+	let params = useParams();
+	
+	useEffect(() => {
+		axios.get(url + 'products/getproducts.php/' + params.categoryId)
+		.then((response) => {
+			const json = response.data;
+			setCategoryName(json.category);
+			setProducts(json.products);
+		}).catch(error => {
+			alert(error.response === undefined ? error : error.response.data.error);
+		})
+	}, [params])
+
+
 
 	return (
 		<div className="items-container">
@@ -15,7 +31,7 @@ export default function body() {
 						alt="..."
 					/>
 					<div className="card-body">
-						{products.map(product => (
+						{roducts.map(product => (
 						<h5 className="card-title" key={product.id}>{product.name}</h5>
 						))}
 						<a href="#" className="btn btn-primary">

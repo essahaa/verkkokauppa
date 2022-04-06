@@ -15,7 +15,7 @@ function App() {
 			<div className="container">
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/Products" element={<Products />} />
+					<Route path="/Products/:categoryId" element={<Products url={URL}/>} />
 				</Routes>
 				<Header></Header>
 				<Navbar url={URL} />

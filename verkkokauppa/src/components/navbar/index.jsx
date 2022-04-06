@@ -3,8 +3,6 @@ import './navbar.scss';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-
-
 export default function Navbar({ url }) {
 	const [categories, setGategories] = useState([]);
 

@@ -14,7 +14,7 @@ export default function home() {
 		>
 			<Navbar url={URL} />
 
-			<Body></Body>
+			<Body url={URL}></Body>
 		</div>
 	);
 }

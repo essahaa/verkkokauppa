@@ -18,9 +18,7 @@ export default function Navbar({ url }) {
 			})
 			.catch((error) => {
 				alert(
-					error.response === undefined
-						? error
-						: error.response.data.error
+					error.response === undefined ? error : error.response.data.error
 				);
 			});
 	}, []);

@@ -6,13 +6,14 @@ import Products from './pages/Products';
 import Header from './components/header';
 
 
+
 function App() {
 	return (
 		<div className="App">
 			<Header></Header>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/Products" element={<Products />} />
+				
 			</Routes>
 		</div>
 	);

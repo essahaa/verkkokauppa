@@ -4,7 +4,7 @@ import Navbar from '../components/navbar';
 
 const URL = 'http://localhost/verkkokauppaBackEndi/';
 
-export default function home() {
+export default function Home() {
 	return (
 		<div
 			style={{
@@ -14,7 +14,7 @@ export default function home() {
 		>
 			<Navbar url={URL} />
 
-			<Body url={URL}></Body>
+			<Body></Body>
 		</div>
 	);
 }

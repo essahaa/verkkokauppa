@@ -10,7 +10,7 @@ export default function Navbar({ url }) {
 	useEffect(() => {
 		console.log(url);
 		axios
-			.get(url + 'products/getcategories.php')
+			.get(url + 'products/getcategories.php/')
 			.then((response) => {
 				const json = response.data;
 				setGategories(json);

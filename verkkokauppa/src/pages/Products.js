@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 
-export default function Products({url}) {
+export default function Product({url}) {
 
 	const [categoryName, setCategoryName] = useState('');
 	const [products, setProducts] = useState([]);
@@ -11,7 +11,7 @@ export default function Products({url}) {
 	let params = useParams();
 	
 	useEffect(() => {
-		axios.get(url + 'products/getproducts.php' + params.categoryId)
+		axios.get(url + 'products/getproducts.php/' + params.categoryId)
 		.then((response) => {
 			const json = response.data;
 			console.log(json);

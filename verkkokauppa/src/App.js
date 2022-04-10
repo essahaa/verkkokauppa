@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Header from './components/header';
 
-
+const URL = 'http://localhost/verkkokauppaBackEndi/';
 
 function App() {
 	return (
@@ -13,7 +13,7 @@ function App() {
 			<Header></Header>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				
+				<Route path="/products/:categoryId/" element={<Products url={URL}/>} /> 
 			</Routes>
 		</div>
 	);

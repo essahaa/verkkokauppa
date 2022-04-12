@@ -4,14 +4,16 @@ import './App.scss';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Header from './components/header';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
 	return (
 		<div className="App">
 			<Header></Header>
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="*" element={<Home />} />
 				<Route path="/Products" element={<Products />} />
+				<Route path="/" element={<ProductDetail/>}/>
 			</Routes>
 		</div>
 	);

@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import Navbar from '../components/navbar';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';

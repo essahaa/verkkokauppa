@@ -28,7 +28,7 @@ export default function Navbar({ url }) {
 			{categories.map((category) => (
 				<Link className="links" to={'/products/' + category.id}>
 					<Button variant="outline-light" className="w-100">
-						{category.name}
+					{ 	category.name} 
 					</Button>
 				</Link>
 			))}

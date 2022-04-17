@@ -41,7 +41,7 @@ return (
 			<h5 className="card-title" key={product.id}>{product.name}</h5>
 		
 			<a href="#" className="btn btn-primary">
-				Go somewhere
+				Tuotesivu
 			</a>
 		</div>
 	</div>

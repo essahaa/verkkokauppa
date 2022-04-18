@@ -3,13 +3,14 @@ import './navbar.scss';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
+
 export default function Navbar({ url }) {
 	const [categories, setGategories] = useState([]);
 
 	useEffect(() => {
 		console.log(url);
 		axios
-			.get(url + 'products/getcategories.php')
+			.get(url + 'products/getcategories.php/')
 			.then((response) => {
 				const json = response.data;
 				setGategories(json);
@@ -17,9 +18,7 @@ export default function Navbar({ url }) {
 			})
 			.catch((error) => {
 				alert(
-					error.response === undefined
-						? error
-						: error.response.data.error
+					error.response === undefined ? error : error.response.data.error
 				);
 			});
 	}, []);

@@ -12,7 +12,7 @@ export default function Home() {
 				justifyContent: 'space-between',
 			}}
 		>
-			<Navbar url={URL} />
+			<Navbar url={URL}/>
 
 			<Body></Body>
 		</div>

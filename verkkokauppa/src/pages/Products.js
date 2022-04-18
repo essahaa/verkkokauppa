@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 
-export default function Product({url}) {
+export default function Product({url,addToCart}) {
 
 	const [categoryName, setCategoryName] = useState('');
 	const [products, setProducts] = useState([]);
@@ -20,7 +20,7 @@ export default function Product({url}) {
 		}).catch(error => {
 			alert(error.response === undefined ? error : error.response.data.error);
 		})
-	}, [params])
+	}, [params, url])
 
 
 
@@ -40,8 +40,8 @@ return (
 			
 			<h5 className="card-title" key={product.id}>{product.name}</h5>
 		
-			<a href="#" className="btn btn-primary">
-				Tuotesivu
+			<a href="#" className="btn btn-primary" type='button' onClick={e => addToCart(product)} >
+				Add to cart
 			</a>
 		</div>
 	</div>

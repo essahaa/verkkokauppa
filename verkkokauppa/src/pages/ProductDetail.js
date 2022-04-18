@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import Navbar from '../components/navbar';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
@@ -9,7 +8,7 @@ const URL = 'http://localhost/verkkokauppaBackEndi/';
 export default function ProductDetail() {
     return (
         <div className="vh-100" style={{ display: 'flex', justifyContent: 'space-between', }}>
-            <Navbar url={URL}  />
+            <Navbar url={URL} />
             <div className="container ms-5 me-5 mt-5">
                 <h1 className="text-left ms-5">Tuotenimi
                 </h1>

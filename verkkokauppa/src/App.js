@@ -5,6 +5,7 @@ import Header from './components/header';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import { useState } from 'react';
+import ProductDetail from './pages/ProductDetail';
 
 
 const URL = 'http://localhost/verkkokauppaBackEndi/';
@@ -24,6 +25,7 @@ function addToCart(product) {
 			<Routes>
 				<Route path="*" element={<Home />} />
 				<Route path="/products/" element={<Products url={URL} addToCart={addToCart}/>} />
+				<Route path="/ProductDetail" element={<ProductDetail/>}/>
 			</Routes>
 		</div>
 	);

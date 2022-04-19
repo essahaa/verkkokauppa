@@ -4,7 +4,7 @@ import Navbar from '../components/navbar';
 
 const URL = 'http://localhost/verkkokauppaBackEndi/';
 
-export default function home() {
+export default function Home() {
 	return (
 		<div
 			style={{

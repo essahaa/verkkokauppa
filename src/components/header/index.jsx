@@ -1,20 +1,20 @@
 import React from 'react';
 import './header.scss';
 import { MDBInput } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 //import cart.png
 const Header = () => {
 	return (
 		<div id="headerdiv" className="headerkuvat">
 			<div id="jonnenvalinta">
-				<a href="../../pages/Home.js">
-					{' '}
+				<Link to="/">
 					<img
 						id="logokuva"
 						className="headerkuvas"
 						src="/images/jonne1.png"
 						alt="JonnenValinta"
 					/>
-				</a>
+				</Link>
 			</div>
 			{
 				<MDBInput
@@ -24,6 +24,8 @@ const Header = () => {
 				/>
 			}
 
+
+			<Link to="/ShoppingCart">
 			<div className="headerkuvat">
 				<img
 					className="headerkuvas"
@@ -32,6 +34,7 @@ const Header = () => {
 					alt="cart"
 				/>
 			</div>
+			</Link>
 		</div>
 	);
 };

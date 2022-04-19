@@ -22,7 +22,7 @@ export default function Navbar({ url }) {
 						: error.response.data.error
 				);
 			});
-	}, []);
+	}, [url]);
 	return (
 		<div className="button-column">
 			{categories.map((category) => (

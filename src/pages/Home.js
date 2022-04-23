@@ -10,6 +10,8 @@ export default function Home() {
 			style={{
 				display: 'flex',
 				justifyContent: 'space-between',
+				overflow: 'auto',
+				height: '100%',
 			}}
 		>
 			<Navbar url={URL} />

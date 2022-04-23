@@ -4,7 +4,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 export default function Navbar({ url }) {
-	const [categories, setGategories] = useState([]);
+	const [categories, setCategories] = useState([]);
 
 	useEffect(() => {
 		console.log(url);
@@ -12,21 +12,22 @@ export default function Navbar({ url }) {
 			.get(url + 'products/getcategories.php')
 			.then((response) => {
 				const json = response.data;
-				setGategories(json);
+				setCategories(json);
 				console.log(json);
 			})
 			.catch((error) => {
-				alert(
+				console.log(error)
+	/* 			alert(
 					error.response === undefined
 						? error
 						: error.response.data.error
-				);
+				); */
 			});
 	}, [url]);
-	return (
+	return ( 
 		<div className="button-column">
 			{categories.map((category) => (
-				<Link className="links" to={'/products/' + category.id}>
+				<Link key={category.id} className="links" to={'/products/' + category.id}>
 					<Button variant="outline-light" className="w-100">
 					{ 	category.name} 
 					</Button>

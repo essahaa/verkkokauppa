@@ -1,16 +1,20 @@
 .items-container {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	height: 100%;
 	background-color: #282c34;
 	color: #af223f;
 	align-items: center;
 	justify-content: center;
 	overflow-y: auto;
 	flex-wrap: wrap;
-	flex-basis: 90%;
+	flex-basis: 80%;
+	padding-bottom: 10em;
 }
 
 .card {
 	height: 100%;
+	width: 17em;
 	background-color: #282c34;
 	color: white;
 	outline: auto;

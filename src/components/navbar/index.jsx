@@ -16,20 +16,23 @@ export default function Navbar({ url }) {
 				console.log(json);
 			})
 			.catch((error) => {
-				console.log(error)
-	/* 			alert(
+				alert(
 					error.response === undefined
 						? error
 						: error.response.data.error
-				); */
+				);
 			});
 	}, [url]);
-	return ( 
+	return (
 		<div className="button-column">
 			{categories.map((category) => (
-				<Link key={category.id} className="links" to={'/products/' + category.id}>
+				<Link
+					key={category.id}
+					className="links"
+					to={'/products/' + category.id}
+				>
 					<Button variant="outline-light" className="w-100">
-					{ 	category.name} 
+						{category.name}
 					</Button>
 				</Link>
 			))}

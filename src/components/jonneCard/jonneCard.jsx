@@ -11,11 +11,11 @@ const JonneCard = (props) => {
 				/>
 				<div className="card-body">
 					<h5 className="card-title">{props.name}</h5>
-					<p>{props.price}</p>
+					<p>{props.price}€</p>
 					<Link
 						className="links btn btn-outline-light btn-lg"
 						role="button"
-						to={'/productDetail/'}
+						to={'/productDetail/'+ props.id}
 					>
 						Tuotetiedot
 					</Link>

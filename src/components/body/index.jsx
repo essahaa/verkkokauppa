@@ -27,9 +27,11 @@ export default function Body(props) {
 			return jonnes.map((item) => {
 				return (
 					<JonneCard
+						key={item.id}
 						image={item.image}
 						name={item.name}
 						price={item.price}
+						id={item.id}
 					/>
 				);
 			});
@@ -39,9 +41,11 @@ export default function Body(props) {
 				.map((item) => {
 					return (
 						<JonneCard
+							key={item.id}
 							image={item.image}
 							name={item.name}
 							price={item.price}
+							id={item.id}
 						/>
 					);
 				});

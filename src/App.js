@@ -16,7 +16,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route
-					path="/ProductDetail"
+					path="/productDetail/:id"
 					element={<ProductDetail cart={cart} setCart={setCart} />}
 				/>
 				<Route

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './body.scss';
 import JonneCard from '../jonneCard/jonneCard';
 
+const URL = 'http://localhost/verkkokauppaBackEndi/';
+
 export default function body() {
 	const renderCards = () => {
 		let cards = [];

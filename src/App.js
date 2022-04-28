@@ -5,7 +5,10 @@ import Home from './pages/Home';
 import Header from './components/header';
 import ProductDetail from './pages/ProductDetail';
 import ShoppingCart from './pages/ShoppingCart';
+import ManageCategories from './pages/AdminPage';
 import { useState } from 'react';
+
+const URL = 'http://localhost/verkkokauppaBackEndi/';
 
 function App() {
 	const [cart, setCart] = useState(["test"]);
@@ -25,7 +28,7 @@ function App() {
 				/>
 				<Route
 					path="/AdminPage"
-					element={<ShoppingCart cart={cart} />}
+					element={<ManageCategories url={URL} />}
 				/>
 			</Routes>
 		</div>

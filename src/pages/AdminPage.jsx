@@ -9,6 +9,7 @@ export default function ManageCategories({url}) {
 
     function saveCategory(e) {
         e.preventDefault();
+        console.log(url);
         const json = JSON.stringify({name: newCategory});
         axios.post(url + 'products/addcategories.php',json,{
             headers: {
@@ -30,10 +31,13 @@ export default function ManageCategories({url}) {
             <h3>Manage categories</h3>
             <div>
                 <label>Category</label>
-                <input type="text" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}/>
+                <CategoryList
+                url={url}
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
+                />
+                <button className="btn btn-dark" type="button" onClick={()=> setAddingCategory(true)}>Add</button>
             </div>
-            <button type="button" onClick={() => setAddingCategory(false)}>Cancel</button>
-            <button type='submit'>Save</button>
             </>
         )
     } else {

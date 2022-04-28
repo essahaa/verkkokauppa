@@ -2,6 +2,7 @@ import './navbar.scss';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function Navbar(props) {
 	const [categories, setCategories] = useState([]);
@@ -41,6 +42,15 @@ export default function Navbar(props) {
 					{category.name}
 				</Button>
 			))}
+
+			<Link to="/AdminPage">
+				<Button
+					variant="outline-light"
+					className="w-100"
+				>
+					Admin
+				</Button>
+			</Link>
 		</div>
 	);
 }

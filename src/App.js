@@ -23,6 +23,10 @@ function App() {
 					path="/ShoppingCart"
 					element={<ShoppingCart cart={cart} />}
 				/>
+				<Route
+					path="/AdminPage"
+					element={<ShoppingCart cart={cart} />}
+				/>
 			</Routes>
 		</div>
 	);

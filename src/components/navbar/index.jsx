@@ -1,19 +1,17 @@
-import { Link } from 'react-router-dom';
 import './navbar.scss';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-export default function Navbar({ url }) {
-	const [categories, setGategories] = useState([]);
+
+export default function Navbar(props) {
+	const [categories, setCategories] = useState([]);
 
 	useEffect(() => {
-		console.log(url);
 		axios
-			.get(url + 'products/getcategories.php')
+			.get(props.url + 'products/getcategories.php')
 			.then((response) => {
-				const json = response.data;
-				setGategories(json);
-				console.log(json);
+				console.log(response.data);
+				setCategories(response.data);
 			})
 			.catch((error) => {
 				alert(
@@ -22,15 +20,26 @@ export default function Navbar({ url }) {
 						: error.response.data.error
 				);
 			});
-	}, [url]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 	return (
 		<div className="button-column">
+			<Button
+				onClick={() => props.setFilter(0)}
+				variant="outline-light"
+				className="w-100"
+			>
+				Kaikki
+			</Button>
 			{categories.map((category) => (
-				<Link className="links" to={'/products/' + category.id}>
-					<Button variant="outline-light" className="w-100">
-					{ 	category.name} 
-					</Button>
-				</Link>
+				<Button
+					key={category.id}
+					variant="outline-light"
+					className="w-100"
+					onClick={() => props.setFilter(category.id)}
+				>
+					{category.name}
+				</Button>
 			))}
 		</div>
 	);

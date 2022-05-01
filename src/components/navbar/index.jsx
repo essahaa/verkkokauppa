@@ -51,6 +51,15 @@ export default function Navbar(props) {
 					Admin
 				</Button>
 			</Link>
+
+			<Link to="/productAdd">
+				<Button
+					variant="outline-light"
+					className="w-100"
+				>
+					addproducts
+				</Button>
+			</Link>
 		</div>
 	);
 }

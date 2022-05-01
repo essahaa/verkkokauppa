@@ -7,6 +7,7 @@ import ProductDetail from './pages/ProductDetail';
 import ShoppingCart from './pages/ShoppingCart';
 import ManageCategories from './pages/AdminPage';
 import { useState } from 'react';
+import ManageProducts from './pages/productAdd';
 
 const URL = 'http://localhost/verkkokauppaBackEndi/';
 
@@ -29,6 +30,11 @@ function App() {
 				<Route
 					path="/AdminPage"
 					element={<ManageCategories url={URL} />}
+				/>
+
+<Route
+					path="/productAdd"
+					element={<ManageProducts url={URL} />}
 				/>
 			</Routes>
 		</div>

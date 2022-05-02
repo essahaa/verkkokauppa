@@ -11,7 +11,7 @@ const Header = () => {
 					<img
 						id="logokuva"
 						className="headerkuvas"
-						src="jonne1.png"
+						src="https://i.imgur.com/yC6sUv2.png"
 						alt="JonnenValinta"
 					/>
 				</Link>
@@ -30,7 +30,7 @@ const Header = () => {
 				<img
 					className="headerkuvas"
 					id="cartkuva"
-					src={'cart.png'}
+					src={'https://i.imgur.com/lW7ZRoX.png'}
 					alt="cart"
 				/>
 			</div>

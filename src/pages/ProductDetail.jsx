@@ -31,11 +31,13 @@ export default function ProductDetail(props) {
 
 	console.log(id);
 
-	const addProductToCart = (product) => {
-		product = 'test';
+	const addProductToCart = () => {
+		const data = productDetails.id
 		const cartItems = [...props.cart];
-		cartItems.push(product);
+		cartItems.push(data);
 		props.setCart(cartItems);
+
+		alert('Tuote lisätty ostoskoriin');
 	};
 
 	return (
@@ -49,14 +51,12 @@ export default function ProductDetail(props) {
 					<div className="col-md-4">
 						{!loading ? (
 							<img
-								src={"https://www.battery.fi/media/1780/battery-no-calorie-peach_raspberry-33_cl_322x482.png?crop=Fns6Eqm2B6CT_CiA2ff_IUf42TiMyKhK6a2nC9B829dt9h6WLLc9DMPpLpOCHxAEHdTtbJZcwKVsK-shOw3DD5r5YSCdVZCeGCY5aXgbbyq5ml-2YyI5r_xVELPOQ16V"}
+								src={productDetails.image}
 								alt=""
-								style={
-									{
-										width: '100%',
-										height: 'auto',
-									}
-								}
+								style={{
+									width: '100%',
+									height: 'auto',
+								}}
 							></img>
 						) : null}
 					</div>
@@ -67,7 +67,9 @@ export default function ProductDetail(props) {
 						<p> Ravintoarvot</p>
 						<h3 className="my-3">Ainesosat</h3>
 						<p> Ainesosat</p>
-						<h3 className="my-3 mt-5">Hinta € / kpl</h3>
+						<h3 className="my-3 mt-5">
+							Hinta {!loading && productDetails.price}€/kpl
+						</h3>
 						<Button
 							onClick={addProductToCart}
 							variant="outline-light"
@@ -80,7 +82,4 @@ export default function ProductDetail(props) {
 			</div>
 		</div>
 	);
-}
-function setJonnes(data) {
-	throw new Error('Function not implemented.');
 }

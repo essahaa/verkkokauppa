@@ -13,7 +13,7 @@ export default function ManageProducts({url}) {
     useEffect(() => {
         if (selectedCategory !== null) {
             console.log(selectedCategory.id);
-            axios.get(url + 'products/getproducts.php/' + selectedCategory.id)
+            axios.get(url + 'products/getproducts.php/' + selectedCategory.categoryId)
             .then((response) => {
                 const json = response.data;
                 if (json) {

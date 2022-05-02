@@ -6,6 +6,8 @@ export default function ManageCategories({url}) {
     const [newCategory, setNewCategory] = useState("");
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [addingCategory, setAddingCategory] = useState(false);
+    
+
 
     function saveCategory(e) {
         e.preventDefault();

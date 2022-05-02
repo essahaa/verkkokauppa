@@ -20,6 +20,7 @@ export default function CategoryList({url, selectedCategory, setSelectedCategory
     }, [selectedCategory])
 
     function onCategoryChange(value) {
+        console.log(value);
         setSelectedCategory(categories.filter(item => item.id === value));
     }
 

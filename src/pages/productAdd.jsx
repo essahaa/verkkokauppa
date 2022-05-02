@@ -12,12 +12,12 @@ export default function ManageProducts({url}) {
 
     useEffect(() => {
         if (selectedCategory !== null) {
-            console.log(selectedCategory);
+            console.log(selectedCategory.id);
             axios.get(url + 'products/getproducts.php/' + selectedCategory.id)
             .then((response) => {
                 const json = response.data;
                 if (json) {
-                    setProducts(json.product);
+                    setProducts(json.products);
                 }
             }).catch (error => {
                 alert(error.response === undefined ? error : error.response.data.error);
@@ -26,7 +26,7 @@ export default function ManageProducts({url}) {
     }, [url,selectedCategory])
 
     function saveProduct(e) {
-        console.log("test");
+        console.log(e);
         e.preventDefault();
         const json = JSON.stringify({name: productName,price: price,categoryid: selectedCategory.id});
         axios.post(url + 'products/addproducts.php',json,{
@@ -47,7 +47,11 @@ if (!addingProduct){
     return (
         <>
         <h3>Manage products</h3>
-            <CategoryList url={url} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
+        <CategoryList
+                url={url}
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
+                />
             <table className='table'>
                 <thead>
                     <tr key={uuid()}>
@@ -56,11 +60,11 @@ if (!addingProduct){
                     </tr>
                 </thead>
                 <tbody>
-                    {products?.map((product) => (
-                    <tr key={uuid()}>
-                        <td>{product.name}</td>
-                        <td>{product.price}</td>
-                    </tr>
+                    {products.map((product) => (
+                        <tr key={uuid()}>
+                            <td>{product.name}</td>
+                            <td>{product.price}</td>
+                        </tr>
                     ))}
                 </tbody>
             </table>

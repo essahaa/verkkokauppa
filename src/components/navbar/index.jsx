@@ -52,7 +52,7 @@ export default function Navbar(props) {
 				</Button>
 			</Link>
 
-			<Link to="/productAdd">
+			<Link to="/ProductAdd">
 				<Button
 					variant="outline-light"
 					className="w-100"

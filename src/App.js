@@ -7,7 +7,7 @@ import ProductDetail from './pages/ProductDetail';
 import ShoppingCart from './pages/ShoppingCart';
 import ManageCategories from './pages/AdminPage';
 import { useState } from 'react';
-import ManageProducts from './pages/ProductAdd';
+import ManageProducts from './pages/productAdd';
 
 const URL = 'http://localhost/verkkokauppaBackEndi/';
 

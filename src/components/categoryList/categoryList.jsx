@@ -17,15 +17,15 @@ export default function CategoryList({url, selectedCategory, setSelectedCategory
         }).catch (error => {
             alert(error.response === undefined ? error : error.response.data.error);
         })
-    }, [selectedCategory])
+    }, [])
 
     function onCategoryChange(value) {
-        setSelectedCategory(categories.filter(item => item.id === value));
+        setSelectedCategory(value);
         console.log(value);
     }
 
     return (
-        <select value={selectedCategory?.id} onChange={(e) => onCategoryChange(e.target.value)}>
+        <select onChange={(e) => onCategoryChange(e.target.value)}>
             {categories.map((category) => (
                 <option key={category.id} value={category.id}>{category.name}</option>
             ))}

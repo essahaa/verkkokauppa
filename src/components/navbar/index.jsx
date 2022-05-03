@@ -24,7 +24,7 @@ export default function Navbar(props) {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
-		<div className="button-column">
+		<div className="button-column mt-4">
 			<Button
 				onClick={() => props.setFilter(0)}
 				variant="outline-light"

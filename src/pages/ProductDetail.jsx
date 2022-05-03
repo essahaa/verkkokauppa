@@ -43,8 +43,8 @@ export default function ProductDetail(props) {
 			className="vh-100"
 			style={{ display: 'flex', justifyContent: 'space-between' }}
 		>
-			<div className="container ms-5 me-5 mt-5">
-				<h1 className="text-left ms-5">Tuotenimi</h1>
+			<div className="container ml-5 mt-5">
+				<h1 className="text-left ms-5">{!loading && productDetails.name}</h1>
 				<div className="row">
 					<div className="col-md-4">
 						{!loading ? (
@@ -62,12 +62,12 @@ export default function ProductDetail(props) {
 					</div>
 					<div className="col-md-4">
 						<h3 className="my-3">Tuotekuvaus</h3>
-						<p>Tuotekuvaus</p>
+						{!loading && productDetails.kuvaus}
 						<h3 className="my-3">Ravintoarvot</h3>
-						<p> Ravintoarvot</p>
+						{!loading && productDetails.ravintoarvot}
 						<h3 className="my-3">Ainesosat</h3>
-						<p> Ainesosat</p>
-						<h3 className="my-3 mt-5">Hinta € / kpl</h3>
+						{!loading && productDetails.aineosat}
+						<h3 className="my-3 mt-5">Hinta {!loading && productDetails.price}€/kpl</h3>
 						<Button
 							onClick={addProductToCart}
 							variant="outline-light"

@@ -10,7 +10,7 @@ const Header = () => {
 				<Link to="/">
 					<img
 						id="logokuva"
-						className="headerkuvas"
+						className="headerkuvas mt-3"
 						src="jonne1.png"
 						alt="JonnenValinta"
 					/>

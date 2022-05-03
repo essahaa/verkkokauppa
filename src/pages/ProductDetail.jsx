@@ -46,7 +46,7 @@ export default function ProductDetail(props) {
 			<div className="container ml-5 mt-5">
 				<h1 className="text-left ms-5">{!loading && productDetails.name}</h1>
 				<div className="row">
-					<div className="col-md-4">
+					<div className="col-md-4 mt-5">
 						{!loading ? (
 							<img
 								src={productDetails.image}
@@ -54,7 +54,7 @@ export default function ProductDetail(props) {
 								style={
 									{
 										width: '100%',
-										height: 'auto',
+										height: '300px',
 									}
 								}
 							></img>

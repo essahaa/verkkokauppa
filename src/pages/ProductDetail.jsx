@@ -46,7 +46,7 @@ export default function ProductDetail(props) {
 			style={{ display: 'flex', justifyContent: 'space-between' }}
 		>
 			<div className="container ml-5 mt-5">
-				<h1 className="text-left ms-5">Tuotenimi</h1>
+				<h1 className="text-left ms-5">{productDetails.name}</h1>
 				<div className="row">
 					<div className="col-md-4">
 						{!loading ? (

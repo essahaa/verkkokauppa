@@ -53,7 +53,7 @@ if (!addingProduct){
         <CategoryList
                 url={url}
                 selectedCategory={selectedCategory}
-                setSelectedCategory={setSelectedCategory}
+                setSelectedCategory={setSelectedCategory}    
                 />
             <table className='table'>
                 <thead>

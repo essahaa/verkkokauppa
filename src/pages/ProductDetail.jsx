@@ -81,6 +81,3 @@ export default function ProductDetail(props) {
 		</div>
 	);
 }
-function setJonnes(data) {
-	throw new Error('Function not implemented.');
-}

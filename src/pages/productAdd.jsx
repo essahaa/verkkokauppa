@@ -9,9 +9,11 @@ export default function ManageProducts({url}) {
     const [addingProduct, setAddingProduct] = useState(false);
     const [productName, setProductName] = useState("");
     const [price, setPrice] = useState('');
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (selectedCategory !== null) {
+            setLoading(false);
             console.log(selectedCategory.id);
             axios.get(url + 'products/getproducts.php/' + selectedCategory.categoryId)
             .then((response) => {
@@ -20,6 +22,7 @@ export default function ManageProducts({url}) {
                     setProducts(json.products);
                 }
             }).catch (error => {
+                setLoading(true);
                 alert(error.response === undefined ? error : error.response.data.error);
             })
         }

@@ -49,7 +49,7 @@ export default function ProductDetail(props) {
 					<div className="col-md-4">
 						{!loading ? (
 							<img
-								src={"https://www.battery.fi/media/1780/battery-no-calorie-peach_raspberry-33_cl_322x482.png?crop=Fns6Eqm2B6CT_CiA2ff_IUf42TiMyKhK6a2nC9B829dt9h6WLLc9DMPpLpOCHxAEHdTtbJZcwKVsK-shOw3DD5r5YSCdVZCeGCY5aXgbbyq5ml-2YyI5r_xVELPOQ16V"}
+								src={productDetails.image}
 								alt=""
 								style={
 									{

@@ -20,7 +20,7 @@ function Header() {
 				<Link to="/">
 					<img
 						id="logokuva"
-						className="headerkuvas"
+						className="headerkuvas mt-3 m-2"
 						src="https://i.imgur.com/yC6sUv2.png"
 						alt="JonnenValinta"
 					/>

@@ -11,7 +11,7 @@ export default function ManageCategories({url}) {
 
     function saveCategory(e) {
         e.preventDefault();
-        console.log(url);
+        console.log(selectedCategory.id);
         const json = JSON.stringify({name: newCategory});
         axios.post(url + 'products/addcategories.php',json,{
             headers: {

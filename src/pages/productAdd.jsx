@@ -9,20 +9,17 @@ export default function ManageProducts({url}) {
     const [addingProduct, setAddingProduct] = useState(false);
     const [productName, setProductName] = useState("");
     const [price, setPrice] = useState('');
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (selectedCategory !== null) {
-            setLoading(false);
             console.log(selectedCategory.id);
-            axios.get(url + 'products/getproducts.php/' + selectedCategory.categoryId)
+            axios.get(url + 'products/getproducts.php/' + selectedCategory.id)
             .then((response) => {
                 const json = response.data;
                 if (json) {
                     setProducts(json.products);
                 }
             }).catch (error => {
-                setLoading(true);
                 alert(error.response === undefined ? error : error.response.data.error);
             })
         }
@@ -51,10 +48,10 @@ if (!addingProduct){
         <>
         <h3>Manage products</h3>
         <CategoryList
-                url={url}
-                selectedCategory={selectedCategory}
-                setSelectedCategory={setSelectedCategory}    
-                />
+            url={url}
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}    
+        />
             <table className='table'>
                 <thead>
                     <tr key={uuid()}>

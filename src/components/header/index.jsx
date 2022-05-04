@@ -5,14 +5,14 @@ import { useState, useEffect } from 'react';
 //import cart.png
 
 function Header() {	
-	const [search, setSearch] = useState("");
+/* 	const [search, setSearch] = useState("");
 
 	function executeSearch(e) {
 		if (e.charCode === 13) {
 			e.preventDefault();
 			Navigate('/search' + search);
 		}
-	};
+	}; */
 
 	return (
 		<div id="headerdiv" className="headerkuvat">
@@ -29,9 +29,9 @@ function Header() {
 			<div>
 			<form className="form-inline my-2 my-lg-0">
 				<input  
-				value={search}
+			/* 	value={search}
 				onChange={(e) => setSearch(e.target.value)}
-				onKeyPress={(e) => executeSearch(e)}
+				onKeyPress={(e) => executeSearch(e)} */
 				className="form-control mr-sm-2"
 				type="search" 
                 placeholder="Etsi tuotetta..." 

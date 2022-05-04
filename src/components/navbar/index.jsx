@@ -2,6 +2,7 @@ import './navbar.scss';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function Navbar(props) {
 	const [categories, setCategories] = useState([]);
@@ -23,7 +24,7 @@ export default function Navbar(props) {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
-		<div className="button-column mt-5">
+		<div className="button-column mt-4">
 			<Button
 				onClick={() => props.setFilter(0)}
 				variant="outline-light"
@@ -41,6 +42,24 @@ export default function Navbar(props) {
 					{category.name}
 				</Button>
 			))}
+
+			<Link to="/AdminPage">
+				<Button
+					variant="outline-light"
+					className="w-100"
+				>
+					Admin
+				</Button>
+			</Link>
+
+			<Link to="/ProductAdd">
+				<Button
+					variant="outline-light"
+					className="w-100"
+				>
+					addproducts
+				</Button>
+			</Link>
 		</div>
 	);
 }

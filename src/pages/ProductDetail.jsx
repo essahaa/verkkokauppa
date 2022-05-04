@@ -56,17 +56,19 @@ export default function ProductDetail(props) {
 			style={{ display: 'flex', justifyContent: 'space-between' }}
 		>
 			<div className="container ml-5 mt-5">
-				<h1 className="text-left ms-5">Tuotenimi</h1>
+				<h1 className="text-left ms-5">{!loading && productDetails.name}</h1>
 				<div className="row">
-					<div className="col-md-4">
+					<div className="col-md-4 mt-5">
 						{!loading ? (
 							<img
 								src={productDetails.image}
 								alt=""
-								style={{
-									width: '100%',
-									height: 'auto',
-								}}
+								style={
+									{
+										width: '100%',
+										height: '300px',
+									}
+								}
 							></img>
 						) : null}
 					</div>
@@ -77,9 +79,11 @@ export default function ProductDetail(props) {
 						{!loading && productDetails.ravintoarvot}
 						<h3 className="my-3">Ainesosat</h3>
 						{!loading && productDetails.ainesosat}
-						<h3 className="my-3 mt-5">
+					{/* 	<h3 className="my-3 mt-5">
 							Hinta {!loading && productDetails.price}€/kpl
 						</h3>
+						{!loading && productDetails.aineosat} */}
+						<h3 className="my-3 mt-5">Hinta {!loading && productDetails.price}€/kpl</h3>
 						<Button
 							onClick={addProductToCart}
 							variant="outline-light"

@@ -11,7 +11,6 @@ import ManageProducts from './pages/productAdd';
 
 const URL = 'http://localhost/verkkokauppaBackEndi/';
 
-const URL = 'http://localhost/verkkokauppaBackEndi/';
 
 
 

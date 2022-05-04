@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
+
 export default function ShoppingCart(props) {
 	console.log(props.cart);
 
@@ -14,7 +15,8 @@ export default function ShoppingCart(props) {
 	const [address, setAddress] = useState('');
 	const [zip, setZip] = useState('');
 	const [city, setCity] = useState('');
-	const [cart, setCart] = useState([]);
+
+
 
 	useEffect(() => {
 		axios
@@ -44,17 +46,17 @@ export default function ShoppingCart(props) {
 		return count;
 	};
 
-function order(e) {
-	e.preventDefault();
 
-	const json = JSON.stringify({
+
+function order(e) {
+
+	const json =JSON.stringify( {
 		firstname: firstName,
-		lastname: lastName,
+		lname: lastName,
 		address: address,
 		zip: zip,
 		city: city,
-		cart: cart,
-		});
+	});
 		axios.post(backendUrl + 'order/save.php', json, {
 			headers:{
 				'Accept': 'application/json',
@@ -63,11 +65,16 @@ function order(e) {
 			}
 			})
 .then(() => {
+empty();
 	alert('Tilaus onnistui!');
 }).catch(error => {
 	alert(error.response === undefined ? error : error.response.data.error);
 });
+console.log(e.target.firstname);
+	console.log(e.target.lastname);
+	console.log(json)
 }
+console.log(firstName)
 
 	const renderCartItems = () => {
 		const cartItems = mapIdsToProducts();
@@ -137,7 +144,7 @@ function order(e) {
 				{!loading ? renderCartItems() : <div>Loading...</div>}
 			</div>
 			
-			<Form onSubmit={order()}>
+			<Form onSubmit= {order}>
 			
 
 				<Form.Group className="mb-3" controlId="formBasicPassword">
@@ -172,3 +179,8 @@ function order(e) {
 		</div>
 	);
 }
+
+function empty() {
+	throw new Error('Function not implemented.');
+}
+

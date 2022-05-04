@@ -2,14 +2,33 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-
 const URL = 'http://localhost/verkkokauppaBackEndi/';
+
+
 
 export default function ProductDetail(props) {
 	let { id } = useParams();
 
 	const [productDetails, setProductDetails] = useState();
 	const [loading, setLoading] = useState(true);
+	const [cart, setCart] = useState([]);
+
+
+	const addProductToCart = () => {
+		const data = productDetails.id
+		const cartItems = [...props.cart];
+		cartItems.push(data);
+		props.setCart(cartItems);
+
+		alert('Tuote lisätty ostoskoriin');
+	};
+
+/* 	function removeFromCart(){
+		const itemsWithoutRemoved = cart.filter(item => item !== productDetails.id);
+		addProductToCart()
+		localStorage.setItem("cart",JSON.stringify(newCart) );
+		}
+			 */
 
 	useEffect(() => {
 		axios
@@ -30,15 +49,6 @@ export default function ProductDetail(props) {
 	}, []);
 
 	console.log(id);
-
-	const addProductToCart = () => {
-		const data = productDetails.id
-		const cartItems = [...props.cart];
-		cartItems.push(data);
-		props.setCart(cartItems);
-
-		alert('Tuote lisätty ostoskoriin');
-	};
 
 	return (
 		<div
@@ -83,3 +93,7 @@ export default function ProductDetail(props) {
 		</div>
 	);
 }
+function newCart(newCart) {
+	throw new Error('Function not implemented.');
+}
+

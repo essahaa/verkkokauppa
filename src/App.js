@@ -8,10 +8,20 @@ import ShoppingCart from './pages/ShoppingCart';
 import { createContext, useEffect, useState } from 'react';
 import axios from 'axios';
 
+const URL = 'http://localhost/verkkokauppaBackEndi/';
+
+
+
 function App() {
 	const [cart, setCart] = useState([]);
-	const [products, setProducts] = useState([]);
-	const URL = 'http://localhost/verkkokauppaBackEndi/';
+/* 	const [products, setProducts] = useState([]); */
+
+/* function addToCart(product) {
+	setCart([...cart, product]);
+setCart(newCart);
+localStorage.setItem('cart', JSON.stringify(newCart));
+} */
+
 
 	return (
 		<div className="App">

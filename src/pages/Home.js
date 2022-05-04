@@ -9,12 +9,13 @@ export default function Home() {
 	const [filter, setFilter] = React.useState(0);
 
 	return (
-		<div
+		<div id='containerDiv'
 			style={{
-				display: 'flex',
+				display: 'inline-flex',
 				justifyContent: 'space-between',
 				overflow: 'auto',
 				height: '100%',
+				
 			}}
 		>
 			<Navbar url={URL} setFilter={setFilter}/>

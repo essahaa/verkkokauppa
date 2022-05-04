@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import "./jonneCard.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const JonneCard = (props) => {
 	return (

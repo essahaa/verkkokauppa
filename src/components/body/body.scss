@@ -14,7 +14,7 @@
 
 .card {
 	height: 100%;
-	width: 17em;
+	width: 300px;
 	background-color: #282c34;
 	color: white;
 	outline: auto;
@@ -24,6 +24,7 @@
 
 .card-body {
 	display: flex;
+	width: 300px;
 	background-color: #282c34;
 	align-items: center;
 	flex-direction: column;

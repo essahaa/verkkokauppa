@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 
 export default function ShoppingCart(props) {
 	console.log(props.cart);
@@ -9,6 +9,12 @@ export default function ShoppingCart(props) {
 
 	const [products, setProducts] = useState([]);
 	const [loading, setLoading] = useState(true);
+	const [firstName, setFirstname] = useState('');
+	const [lastName, setLastname] = useState('');
+	const [address, setAddress] = useState('');
+	const [zip, setZip] = useState('');
+	const [city, setCity] = useState('');
+	const [cart, setCart] = useState([]);
 
 	useEffect(() => {
 		axios
@@ -38,6 +44,31 @@ export default function ShoppingCart(props) {
 		return count;
 	};
 
+function order(e) {
+	e.preventDefault();
+
+	const json = JSON.stringify({
+		firstname: firstName,
+		lastname: lastName,
+		address: address,
+		zip: zip,
+		city: city,
+		cart: cart,
+		});
+		axios.post(backendUrl + 'order/save.php', json, {
+			headers:{
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+
+			}
+			})
+.then(() => {
+	alert('Tilaus onnistui!');
+}).catch(error => {
+	alert(error.response === undefined ? error : error.response.data.error);
+});
+}
+
 	const renderCartItems = () => {
 		const cartItems = mapIdsToProducts();
 		const cartItemsArray = [];
@@ -66,14 +97,17 @@ export default function ShoppingCart(props) {
 						style={{
 							width: '100px',
 							height: '100px',
+							objectFit: 'contain',
 						}}
 						src={product.image}
 						alt="kuva"
 					></img>
 					<div>Tuote: {product.name} </div>|
 					<div>Määrä: {cartItems[key]} </div>|
-					<div>Hinta: {product.price * cartItems[key]}€</div>
-					| <Button variant="outline-light" className="w-30">Poista ostoskorista</Button>
+					<div>Hinta: {product.price * cartItems[key]}€</div>|{' '}
+					<Button variant="outline-light" className="w-30">
+						Poista ostoskorista
+					</Button>
 				</div>
 			);
 		}
@@ -102,9 +136,39 @@ export default function ShoppingCart(props) {
 			>
 				{!loading ? renderCartItems() : <div>Loading...</div>}
 			</div>
-			<Button variant="outline-light" className="w-30">
+			
+			<Form onSubmit={order()}>
+			
+
+				<Form.Group className="mb-3" controlId="formBasicPassword">
+					<Form.Label>Etunimi</Form.Label>
+					<Form.Control type="" placeholder="Etunimi" onChange={e => setFirstname(e.target.value)} />
+				</Form.Group>
+				<Form.Group className="mb-3" controlId="formBasicPassword">
+					<Form.Label>Sukunimi</Form.Label>
+					<Form.Control type="" placeholder="Sukunimi" onChange={e => setLastname(e.target.value)}/>
+				</Form.Group>
+				<Form.Group className="mb-3" controlId="formBasicPassword">
+					<Form.Label>Katuosoite</Form.Label>
+					<Form.Control type="" required placeholder="Katuosoite"onChange={e => setAddress(e.target.value)} />
+				</Form.Group>
+				<Form.Group className="mb-3" controlId="formBasicPassword">
+					<Form.Label>Kaupunki</Form.Label>
+					<Form.Control type="" placeholder="Kaupunki"onChange={e => setZip(e.target.value)} />
+				</Form.Group>
+				<Form.Group className="mb-3" controlId="formBasicPassword">
+					<Form.Label>Postinumero</Form.Label>
+					<Form.Control type="" placeholder="Postinumero"onChange={e => setCity(e.target.value)} />
+				</Form.Group>
+			
+				<Form.Group className="mb-3" controlId="formBasicCheckbox">
+					<Form.Check type="checkbox" label="Check me out" />
+				</Form.Group>
+				<Button variant="outline-light" type="submit" className="w-30">
 				Tilaa tuotteet
-			</Button>
+				</Button>
+
+			</Form>
 		</div>
 	);
 }

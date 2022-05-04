@@ -161,11 +161,11 @@ console.log(firstName)
 				</Form.Group>
 				<Form.Group className="mb-3" controlId="formBasicPassword">
 					<Form.Label>Kaupunki</Form.Label>
-					<Form.Control type="" placeholder="Kaupunki"onChange={e => setZip(e.target.value)} />
+					<Form.Control type="" placeholder="Kaupunki"onChange={e => setCity(e.target.value)} />
 				</Form.Group>
 				<Form.Group className="mb-3" controlId="formBasicPassword">
 					<Form.Label>Postinumero</Form.Label>
-					<Form.Control type="" placeholder="Postinumero"onChange={e => setCity(e.target.value)} />
+					<Form.Control type="" placeholder="Postinumero"onChange={e => setZip(e.target.value)} />
 				</Form.Group>
 			
 				<Form.Group className="mb-3" controlId="formBasicCheckbox">

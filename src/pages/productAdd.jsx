@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CategoryList from '../components/categoryList/categoryList';
 import uuid from 'react-uuid';
+import '../productAdd.scss'
 
 export default function ManageProducts({ url }) {
 	const [selectedCategory, setSelectedCategory] = useState();

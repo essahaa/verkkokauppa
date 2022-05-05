@@ -75,10 +75,7 @@ export default function ProductDetail(props) {
 					<div className="col-md-4">
 						<h3 className="my-3">Tuotekuvaus</h3>
 						{!loading && productDetails.kuvaus}
-						<h3 className="my-3">Ravintoarvot</h3>
-						{!loading && productDetails.ravintoarvot}
-						<h3 className="my-3">Ainesosat</h3>
-						{!loading && productDetails.ainesosat}
+				
 					{/* 	<h3 className="my-3 mt-5">
 							Hinta {!loading && productDetails.price}€/kpl
 						</h3>

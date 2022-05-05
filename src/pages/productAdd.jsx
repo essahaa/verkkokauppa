@@ -38,7 +38,7 @@ export default function ManageProducts({ url }) {
 		const json = JSON.stringify({
 			name: productName,
 			price: price,
-			categoryid: selectedCategory,
+			categoryid: selectedCategory
 		});
 		axios
 			.post(url + 'products/addproducts.php', json, {

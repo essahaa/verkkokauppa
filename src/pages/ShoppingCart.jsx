@@ -55,7 +55,7 @@ function order(e) {
 		lname: lastName,
 		address: address,
 		zip: zip,
-		city: city,
+		city: city
 	});
 		axios.post(backendUrl + 'order/save.php', json, {
 			headers:{
@@ -68,11 +68,13 @@ function order(e) {
 empty();
 	alert('Tilaus onnistui!');
 }).catch(error => {
-	alert(error.response === undefined ? error : error.response.data.error);
+	//alert(error.response === undefined ? error : error.response.data.error);
 });
 console.log(e.target.firstname);
 	console.log(e.target.lastname);
 	console.log(json)
+
+	alert('Tilaus onnistui!');
 }
 console.log(firstName)
 

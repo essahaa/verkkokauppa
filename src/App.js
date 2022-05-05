@@ -11,9 +11,6 @@ import ManageProducts from './pages/productAdd';
 
 const URL = 'http://localhost/verkkokauppaBackEndi/';
 
-
-
-
 function App() {
 	const [cart, setCart] = useState([]);
 /* 	const [products, setProducts] = useState([]); */
